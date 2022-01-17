@@ -26,10 +26,9 @@ def connect():
     if nic.isconnected():
         print("WIFI connected Aready ........")
         return
-    nic.connect('GoldenTouch', '@1234567890')
+    nic.connect('Wi-Fi_SSID', 'Password')
     
-    #nic.connect('HUAWEI-CLOUD', '@W1fi#2021$')
-    #nic.connect('wimea-ict', '@wimea-ict2021')
+    
     print("connecting....")
     #print(nic.isconnected())
     while not nic.isconnected():
